@@ -1,7 +1,6 @@
 import React from 'react';
 import classes from './Home.scss';
 import $ from "jquery";
-import './loading.js';
 
 
 class Home extends React.Component {
@@ -16,17 +15,31 @@ class Home extends React.Component {
             var i = setInterval(function () {
                 $("#percentageCounter").html(c + "%");
                 $("#percentageCounterHr").css("width", c + "%");
-                $("#percentageCounterHr").css("background", "linear-gradient(to right, #f60d54 "+ c + "%,#0d0d0d "+ c + "%)");
+                $("#percentageCounterHr").css("background", "linear-gradient(to right, #f60d54 " + c + "%,#0d0d0d " + c + "%)");
 
                 counter++;
                 c++;
 
-                if (counter == 101) {
+                if (counter > 100) {
+                    counter = 0;
                     clearInterval(i);
+                    $('.loading-page').fadeOut("slow", () => {
+                        $("#home").css('display', 'block').hide().fadeIn(3000);
+                        // $("#logo").removeClass('visibility-hidden');
+                    })
                 }
             }, estimatedTime / 100);
         });
 
+        //
+        // $('.home-particles').particleground({
+        //     dotColor: '#fff',
+        //     lineColor: '#555555',
+        //     particleRadius: 6,
+        //     curveLines: true,
+        //     density: 10000,
+        //     proximity: 110
+        // });
     }
 
     render() {
@@ -36,7 +49,7 @@ class Home extends React.Component {
                     <div className={classes.Counter}>
                         <p>LOADING</p>
                         <h1 id="percentageCounter">0%</h1>
-                        <hr id="percentageCounterHr" />
+                        <hr id="percentageCounterHr"/>
                     </div>
                 </div>
                 <div id="home" className={classes.ShadowOverlay}>

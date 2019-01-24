@@ -47,28 +47,27 @@
       }
     }, estimatedTime/100);
 
-a
 
-
-  	/*---------------------------------------------------- */
-	/* FitVids
-	------------------------------------------------------ */ 
-  	$(".fluid-video-wrapper").fitVids();
-
-
-	/* --------------------------------------------------- */
-	/*  Vegas Slideshow
-	------------------------------------------------------ */
-	$(".home-slides").vegas({
-		transition: 'fade',
-		transitionDuration: 2500,
-		delay: 5000,
-    	slides: [
-       	{ src: "images/slides/03.jpg" },
-        	{ src: "images/slides/02.jpg" },
-        	{ src: "images/slides/01.jpg" }
-    	]
-	});
+    //
+  	// /*---------------------------------------------------- */
+	// /* FitVids
+	// ------------------------------------------------------ */
+  	// $(".fluid-video-wrapper").fitVids();
+    //
+    //
+	// /* --------------------------------------------------- */
+	// /*  Vegas Slideshow
+	// ------------------------------------------------------ */
+	// $(".home-slides").vegas({
+	// 	transition: 'fade',
+	// 	transitionDuration: 2500,
+	// 	delay: 5000,
+    // 	slides: [
+    //    	{ src: "images/slides/03.jpg" },
+    //     	{ src: "images/slides/02.jpg" },
+    //     	{ src: "images/slides/01.jpg" }
+    // 	]
+	// });
 
 
 	/* --------------------------------------------------- */
@@ -84,47 +83,47 @@ a
 	}); 
 
 
-	
-	/*----------------------------------------------------*/
-  	/* Smooth Scrolling
-  	------------------------------------------------------*/
-  	$('.smoothscroll').on('click', function (e) {
-	 	
-	 	e.preventDefault();
-
-   	var target = this.hash,
-    	$target = $(target);
-
-    	$('html, body').stop().animate({
-       	'scrollTop': $target.offset().top
-      }, 800, 'swing', function () {
-      	window.location.hash = target;
-      });
-
-  	});
-
-
-  	/* --------------------------------------------------- */
-	/*  Placeholder Plugin Settings
-	------------------------------------------------------ */
-	$('input, textarea, select').placeholder()  
-
-
-  	/*---------------------------------------------------- */
-   /* ajaxchimp
-	------------------------------------------------------ */
-
-	// Example MailChimp url: http://xxx.xxx.list-manage.com/subscribe/post?u=xxx&id=xxx
-	var mailChimpURL = 'http://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e65110b38d'
-
-	$('#mc-form').ajaxChimp({
-
-		language: 'es',
-	   url: mailChimpURL
-
-	});
-
-	
+	//
+	// /*----------------------------------------------------*/
+  	// /* Smooth Scrolling
+  	// ------------------------------------------------------*/
+  	// $('.smoothscroll').on('click', function (e) {
+	//
+	//  	e.preventDefault();
+    //
+   	// var target = this.hash,
+    // 	$target = $(target);
+    //
+    // 	$('html, body').stop().animate({
+    //    	'scrollTop': $target.offset().top
+    //   }, 800, 'swing', function () {
+    //   	window.location.hash = target;
+    //   });
+    //
+  	// });
+    //
+    //
+  	// /* --------------------------------------------------- */
+	// /*  Placeholder Plugin Settings
+	// ------------------------------------------------------ */
+	// $('input, textarea, select').placeholder()
+   //
+   //
+  	// /*---------------------------------------------------- */
+   // /* ajaxchimp
+	// ------------------------------------------------------ */
+   //
+	// // Example MailChimp url: http://xxx.xxx.list-manage.com/subscribe/post?u=xxx&id=xxx
+	// var mailChimpURL = 'http://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e65110b38d'
+   //
+	// $('#mc-form').ajaxChimp({
+   //
+	// 	language: 'es',
+	//    url: mailChimpURL
+   //
+	// });
+   //
+	//
 	
  
 
