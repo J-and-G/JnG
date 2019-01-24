@@ -1,14 +1,110 @@
-.Home {
-    text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.HomeHeader {
-    background-color: #222;
-    height: 30px;
-    padding: 20px;
-    color: white;
+#home{
+    background: #020507;
+	width: 100vw;
+	height: 100vh;
+	min-height: 800px;
+	z-index: 600;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.ShadowOverlay{
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .9;
+	background: -moz-linear-gradient(left, black 0%, black 20%, transparent 100%);  /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, black 0%, black 20%, transparent 100%);  /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, black 0%, black 20%, transparent 100%);  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=1);  /* IE6-9 */
+	display:block;
+}
+
+
+.LoadingPage {
+    background: #0d0d0d;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
+  }
+  .Counter{
+    text-align: center;
+  }
+  .Counter p {
+    font-size: 40px;
+    color: #f60d54;
+  }
+  .Counter h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .Counter hr {
+    background: #f60d54;
+    border: none;
+    height: 2px;
+  }
+  .Counter{
+    position: relative;
+    width: 200px;
+  }
+  .Counter h1.abs {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .Counter .color {
+    width: 0px;
+    overflow: hidden;
+    color: #f60d54;
+  }
+  
+//   @media only screen and (max-width:1024px) {
+//       header .logo {
+//           margin: 38px;
+//           width: 70px;
+//           height: 80px;
+//       }
+//   }
+//   @media only screen and (max-width:768px) {
+//       header .logo {
+//           margin: 30px;
+//           width: 70px;
+//           height: 80px;
+//       }
+//   }
+//   @media only screen and (max-width:600px) {
+//       header .logo {
+//           margin: 28px;
+//           width: 65px;
+//           height: 75px;
+//       }
+//   }
+//   @media only screen and (max-width:500px) {
+//       header .logo {
+//           margin: 28px;
+//           width: 55px;
+//           height: 64px;
+//       }
+//   }
+//   @media only screen and (max-width:380px) {
+//       header .logo {
+//           margin: 28px;
+//           width: 50px;
+//           height: 58px;
+//       }
+  
+//   }

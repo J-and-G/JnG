@@ -1,6 +1,5 @@
 import React from 'react';
-import AppRouter from './AppRouter';
-import Navbar from './components/UI/Navbar/Navbar';
+import Home from './components/Home/Home';
 
 
 class App extends React.Component {
@@ -8,8 +7,7 @@ class App extends React.Component {
   render() {
     return (
         <div>
-          <Navbar />
-          <AppRouter />
+          <Home />
         </div>
     );
   }
